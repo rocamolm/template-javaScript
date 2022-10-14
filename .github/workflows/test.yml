@@ -15,6 +15,6 @@ jobs:
       - name: Create a release draft for version tag
         id: create-release-draft
         run: npm run all
-        #uses: ./
+        uses: ./
       - name: Print the URL of the release draft
         run: echo ${{ steps.create-release-draft.outputs.release-url }}
